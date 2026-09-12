@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1086" height="760" viewBox="0 0 1086 760">
+  <defs>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><circle cx="27" cy="27" r="1.65" fill="#BFD4DC" opacity="0.62"/></pattern>
+    <pattern id="tape" width="18" height="18" patternUnits="userSpaceOnUse"><rect width="18" height="18" fill="#E8A092"/><circle cx="4" cy="5" r="2.2" fill="#F9E8DD"/><circle cx="14" cy="13" r="2" fill="#F9E8DD" opacity=".78"/></pattern>
+    <pattern id="badge" width="18" height="18" patternUnits="userSpaceOnUse"><rect width="18" height="18" fill="#F2C7BF"/><circle cx="4" cy="5" r="1.8" fill="#FBEEE7"/><path d="M0 17L17 0" stroke="#D98B7D" stroke-width=".8" opacity=".4"/></pattern>
+    <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7B5144" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1086" height="760" fill="#F6F0E8"/><rect width="1086" height="760" fill="url(#grid)"/>
+  <text x="64" y="78" fill="#292722" font-family="Hiragino Sans GB, PingFang SC, sans-serif" font-size="34" font-weight="600">AI 干中学 · 固定组件样张</text>
+  <line x1="64" y1="105" x2="1022" y2="105" stroke="#C86545" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <g transform="translate(80 152) rotate(-6 105 32)" filter="url(#shadow)"><rect width="210" height="64" rx="5" fill="url(#tape)"/></g>
+  <text x="80" y="262" fill="#817872" font-family="Hiragino Sans GB, PingFang SC, sans-serif" font-size="22">胶带  #E8A092</text>
+
+  <g transform="translate(392 138)" filter="url(#shadow)"><circle cx="74" cy="74" r="65" fill="url(#badge)" stroke="#D98B7D" stroke-width="2"/><text x="74" y="92" text-anchor="middle" fill="#FFF9F4" font-family="Georgia, serif" font-size="54">01</text></g>
+  <text x="392" y="262" fill="#817872" font-family="Hiragino Sans GB, PingFang SC, sans-serif" font-size="22">编号底  #F2C7BF</text>
+
+  <g transform="translate(674 138)">
+    <circle cx="74" cy="74" r="65" fill="#F2C7BF" stroke="#D98B7D" stroke-width="2" filter="url(#shadow)"/>
+    <g transform="translate(41 42)" fill="none" stroke="#C86545" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9c14-5 25-2 31 5v45c-8-8-18-10-31-5zM65 9c-14-5-25-2-31 5v45c8-8 18-10 31-5z"/>
+      <path d="M12 22c7-2 12-1 17 2M12 34c7-2 12-1 17 2M56 22c-7-2-12-1-17 2M56 34c-7-2-12-1-17 2" stroke-width="3"/>
+    </g>
+  </g>
+  <text x="674" y="262" fill="#817872" font-family="Hiragino Sans GB, PingFang SC, sans-serif" font-size="22">图标线  #C86545</text>
+
+  <g transform="translate(98 370)" fill="none" stroke="#C86545" stroke-width="5" stroke-linecap="round">
+    <circle cx="52" cy="52" r="34"/><path d="M77 77l31 31"/>
+  </g>
+  <g transform="translate(358 370)" fill="none" stroke="#C86545" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 20h97c12 0 21 8 21 19v45c0 11-9 19-21 19H64l-24 22 5-22H8C-4 103-13 95-13 84V39C-13 28-4 20 8 20z"/>
+    <circle cx="25" cy="62" r="4" fill="#C86545"/><circle cx="54" cy="62" r="4" fill="#C86545"/><circle cx="83" cy="62" r="4" fill="#C86545"/>
+  </g>
+  <g transform="translate(690 355)" fill="none" stroke="#D94F70" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55 38C24 7-1 25 17 51c13 18 38 6 48-3M65 48c13-26 42-33 58-14 14 18-3 39-23 33-13-4-22-12-35-19zM61 43c10 0 15 7 10 16-5 10-19 8-20-2-1-7 3-13 10-14zM58 61c-4 26-16 45-20 67M68 62c13 20 19 42 20 66"/>
+  </g>
+  <text x="80" y="646" fill="#292722" font-family="Hiragino Sans GB, PingFang SC, sans-serif" font-size="25" font-weight="600">用法：</text>
+  <text x="148" y="646" fill="#817872" font-family="Hiragino Sans GB, PingFang SC, sans-serif" font-size="24">复制、等比缩放、不可换色、不可横向拉伸；每页只选 1–2 类装饰。</text>
+</svg>

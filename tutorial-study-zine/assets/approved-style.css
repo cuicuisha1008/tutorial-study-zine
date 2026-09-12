@@ -1,0 +1,77 @@
+/* V2: logical 1086×1448. Render at 2× for preview, 4× for final PNG.
+   Reusable styles distilled from approved STEP1/STEP2.
+   Page-specific positioning belongs in the consuming layout. */
+:root {
+  --page-width: 1086px;
+  --page-height: 1448px;
+  --paper: #f6f0e8;
+  --ink: #292722;
+  --muted: #817872;
+  --title-coral: #c65f52;
+  --accent: #c86545;
+  --font-song: "Songti SC", "STSong", "Noto Serif CJK SC", "Times New Roman", serif;
+  --font-kai: "Kaiti SC", "STKaiti", "Songti SC", serif;
+  --font-body: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+.zine-page, .zine-page * { box-sizing: border-box; }
+.zine-page {
+  position: relative;
+  width: var(--page-width);
+  height: var(--page-height);
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  /* Do not conceal overflow here before visual validation. */
+}
+.zine-series {
+  font: 400 22px/1.3 var(--font-song);
+  letter-spacing: .16em;
+  color: var(--accent);
+}
+.zine-title {
+  margin: 0;
+  font: 600 68px/1.08 var(--font-song);
+  letter-spacing: 0;
+  color: var(--title-coral);
+}
+.zine-intro { font: 400 22px/1.5 var(--font-kai); text-align: center; }
+.zine-part {
+  position: relative;
+  border: 1.2px solid rgba(202,118,84,.60);
+  border-radius: 18px;
+  background: rgba(250,244,237,.72);
+  padding: 28px 28px 30px;
+  box-shadow: inset 0 9px 17px rgba(143,98,69,.16),
+    inset 4px 0 10px rgba(143,98,69,.10),
+    inset -3px 0 9px rgba(143,98,69,.08),
+    inset 0 -5px 12px rgba(255,255,255,.70),
+    0 2px 4px rgba(97,63,45,.09);
+}
+/* Set data-number-side from the Part's reading-order index, not DOM nth-child.
+   1,3 => left; 2,4 => right. Restart on each page. */
+.zine-number {
+  position: absolute; top: 17px; width: 76px; height: 76px;
+  object-fit: contain; z-index: 3;
+  filter: drop-shadow(0 5px 5px rgba(69,43,31,.22));
+}
+.zine-part[data-number-side="left"] .zine-number { left: 14px; right: auto; }
+.zine-part[data-number-side="right"] .zine-number { right: 14px; left: auto; }
+.zine-part-title { margin: 0 0 24px; min-height: 66px; font: 600 29px/1.3 var(--font-song); }
+.zine-part[data-number-side="left"] .zine-part-title { padding-left: 78px; }
+.zine-part[data-number-side="right"] .zine-part-title { padding-right: 78px; }
+.zine-copy { font: 400 20px/1.65 var(--font-body); color: #38322e; }
+.zine-copy p { margin: 0 0 14px; }
+.zine-copy strong { font-weight: 650; color: var(--accent); }
+.zine-kicker { font: 600 25px/1.35 var(--font-kai); color: var(--accent); }
+.zine-note { font: 400 18px/1.55 var(--font-body); color: var(--muted); }
+.zine-prompt {
+  padding: 12px 15px; border-radius: 14px;
+  background: rgba(231,167,140,.20); font: 400 19px/1.58 var(--font-kai);
+}
+.zine-source {
+  display: block; max-width: 100%; height: auto;
+  object-fit: contain; border-radius: 10px;
+  filter: drop-shadow(0 11px 10px rgba(62,42,31,.25));
+}
+.zine-source--cutout { border-radius: 0; }
+.zine-page-number { font: italic 24px/1.2 "Times New Roman", "Songti SC", serif; color: var(--accent); letter-spacing: .05em; }
