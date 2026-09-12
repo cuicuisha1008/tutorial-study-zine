@@ -1,0 +1,8 @@
+interface:
+  display_name: "AI 干中学教程视觉"
+  short_description: "把 AI 学会，把日常做美。用定稿混合字体与原图直贴制作 3:4 高清教程"
+  brand_color: "#C86545"
+  default_prompt: "使用 $tutorial-study-zine，把我的教程文案与原始图片排成 3:4 高清 AI 干中学系列，沿用定稿混合字体、左右交替编号，平台展示按本期需求处理。"
+
+policy:
+  allow_implicit_invocation: true
