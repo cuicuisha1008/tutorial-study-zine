@@ -1,0 +1,11 @@
+# Publish only the reusable skill and repository documentation.
+/*
+!/.gitignore
+!/README.md
+!/tutorial-study-zine/
+
+**/.DS_Store
+**/__pycache__/
+**/*.py[cod]
+**/.env
+**/.env.*
